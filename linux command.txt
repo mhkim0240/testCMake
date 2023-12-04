@@ -1,0 +1,86 @@
+root :  이큐느 
+mhkim0240_2 : xxxx05
+172.17.58.214
+
+github access token 
+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
+
+sudo shutdown -r
+
+sudo apt install net-tools
+
+sudo apt list --installed
+
+sudo apt list --installed|grep vnc
+
+sudo dpkg --purge tigervnc-standalone-server
+
+
+systemctl restart sshd
+ssh mhkim0240_2@172.17.58.214 -p 22
+
+
+
+윈도우에서 ctrl insert로 복사하고 ctrl+shift+v를 통해 붙여 넣기가 가능
+
+
+#######################################
+
+바이너리
+g++ -c server.cpp #server.o
+빌드 
+g++ -o server.o #server
+
+바이너리 여러개 빌드
+g++ -o test main.o my.o 
+
+./server
+./server 12345
+go run client.go
+
+#######################################
+
+$ sudo apt update && sudo apt upgrade -y
+
+#######################################
+아래 처럼 vscode 패키지 설치 안될때 
+E: Unable to locate package code
+=> sudo apt update 이 명령 한번 내리고 다시 설치하면 설치 됨. 
+
+sudo apt-get install code
+
+설치 후 
+code . 명령으로 vscode 실행 
+실행 할 때 코드가 있는 폴더에서 code . 명령 내리면 
+그 폴더에서 실행 됨. 
+
+#######################################
+
+우선 우분투 환경에서 C++파일을 컴파일 해주기 위해 필요한 g++ 프로그램을 다운받는다
+
+$ sudo apt-get install g++
+
+그리고 본인이 c++ 파일을 만들기 희망하는 디렉터리로 이동한 후
+
+$ gedit [파일명].cpp
+
+( $ gedit Test.cpp )
+
+위의 코드를 입력하면 gedit창이 뜨게 되는데 여기에 코드를 작성하여 준다.
+#include <iostream>
+using namespace std;
+int main(void)
+{
+    cout<<"Hello World!\n"<<endl;
+    return 0;
+}
+코드를 작성하였으면 Ctrl+s 를 눌러 저장을 실행하고 이에 따라 위에서 지정한 디렉터리에 Test.cpp파일이 생성됨을
+확인할 수 있다.
+$ g++ [파일명].cpp
+( $ g++ Test.cpp )
+
+위의 코드를 입력하면 컴파일이 완료된 후 디텍터리에  a.out  이라는 실행파일이 생성되게 된다.
+그러면 ./a.out  을 통해 실행시켜보자.
+
+
+#######################################
